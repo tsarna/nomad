@@ -1,6 +1,6 @@
 # AWS EFS CSI Plugin
 
-The configuration here is for the [`AWS Elastic Filesystem`](https://aws.amazon.com/efs/) CSI driver.
+The configuration here is for the [`AWS Elastic Filesystem`](https://aws.amazon.com/efs/) CSI driver. This driver only needs to run on nodes, there is no controller required.
 
 ## Requirements
 
@@ -40,6 +40,8 @@ nomad job run plugin-aws-efs-nodes.hcl
 ```
 
 ### Volume Registration
+
+Note that it is possible to use the root of the filesystem or a subdirectory, and it is perfectly fine to have different volumes using overlapping subtrees (eg `/`, `/foo`, and `/foo/bar`), or even to have multiple volumes use the same path.
 
 ```bash
 export NOMAD_ADDR=https://nomad.example.com:4646

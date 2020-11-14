@@ -30,10 +30,12 @@ job "plugin-aws-efs-nodes" {
 	# If you have blocked access to the EC2 Metadata Service for
 	# tasks running in the default "bridge" mode (advisable),
 	# allow access by running in host mode.
+
         network_mode = "host"
 
         # node plugins must run as privileged jobs because they
         # mount disks to the host
+
         privileged = true
       }
 
