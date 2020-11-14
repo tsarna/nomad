@@ -21,11 +21,11 @@ Refer to the official plugin [README](https://github.com/kubernetes-sigs/aws-efs
 
   - This option must match the `mount_dir` specified in the `csi_plugin` stanza for the task.
 
-- --logtostderr
+- `--logtostderr`
 
   - Logs are written to standard error instead of to files.
 
-- --v=5
+- `--v=5`
 
   - Sets the klog logging "V" level to 5.
 
