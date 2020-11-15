@@ -2,7 +2,6 @@ data "aws_kms_alias" "ebs" {
   name = "alias/aws/ebs"
 }
 
-
 resource "aws_ebs_volume" "mytestebsvol" {
   availability_zone = "us-east-1a"
   size              = 1

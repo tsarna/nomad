@@ -4,7 +4,7 @@ The configuration here is for the [AWS Elastic Block Store](https://aws.amazon.c
 
 ## Requirements
 
-The example plugin jobs use [templates](https://www.nomadproject.io/docs/job-specification/template) rendered wih credentials obtained from the [Vault AWS Secrets Engine](https://www.vaultproject.io/docs/secrets/aws) to obtain the credentials necessary to control EBS volumes.
+The example plugin jobs use [templates](https://www.nomadproject.io/docs/job-specification/template) rendered with secrets obtained from the [Vault AWS Secrets Engine](https://www.vaultproject.io/docs/secrets/aws) to obtain the credentials necessary to control EBS volumes.
 Additionally this directory contains some sample Vault and AWS IAM (via [Terraform](https://www.terraform.io)) configuration that may be useful as a starting point for setting up Vault to provide credentials for these jobs.
 
 ### Docker Privileged Mode
@@ -42,7 +42,7 @@ Refer to the official plugin [README](https://github.com/kubernetes-sigs/aws-ebs
 
 ## Deployment
 
-### Plugin
+### Plugins
 
 ```bash
 export NOMAD_ADDR=https://nomad.example.com:4646
