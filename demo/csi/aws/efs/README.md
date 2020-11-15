@@ -6,7 +6,7 @@ The configuration here is for the [`AWS Elastic Filesystem`](https://aws.amazon.
 
 ### Docker Privileged Mode
 
-The EFS node task requires that [`privileged = true`](https://www.nomadproject.io/docs/drivers/docker#privileged) be set in order to mount/unmount filesystems on the node..
+The EFS node task requires that [`privileged = true`](https://www.nomadproject.io/docs/drivers/docker#privileged) be set in order to mount/unmount filesystems on the node.
 
 ### EC2 Instance Metadata Service.
 
