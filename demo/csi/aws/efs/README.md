@@ -1,6 +1,6 @@
 # AWS EFS CSI Plugin
 
-The configuration here is for the [`AWS Elastic Filesystem`](https://aws.amazon.com/efs/) CSI driver. This driver only needs to run on nodes, there is no controller required.
+The configuration here is for the [AWS Elastic Filesystem](https://aws.amazon.com/efs/) CSI driver. This driver only needs to run on nodes, there is no controller required.
 
 ## Requirements
 
@@ -10,7 +10,7 @@ The EFS node task requires that [`privileged = true`](https://www.nomadproject.i
 
 ### EC2 Instance Metadata Service.
 
-The driver also requires access to the [`EC2 Instance Metadata Service`](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-metadata.html).
+The driver also requires access to the [EC2 Instance Metadata Service](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-metadata.html).
 If you have blocked access to this from docker tasks running in bridge (default) or NAT mode, which is a good idea for security, you may run the task in host networking mode by setting [`network_mode = host`](https://www.nomadproject.io/docs/drivers/docker#network_mode)
 
 ## Container Arguments
